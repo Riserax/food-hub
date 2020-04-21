@@ -12,18 +12,22 @@ var response = "";
  * @returns {Array}
  */
 
-export async function getResultByName(query, number) {
+export async function getResultByName(query, number, size) {
     axios
         .get(
             "https://api.spoonacular.com/recipes/search?apiKey=" +
-                API_KEY +
-                "&query=" +
-                query +
-                "&number=" +
-                number
+            API_KEY +
+            "&query=" +
+            query +
+            "&number=" +
+            number
         )
         .then(response => {
-            this.response = response.data.results;
+            this.response = response.results.map(el => {
+                const type = el.image.split('.')[1];
+                el.image = `https://spoonacular.com/recipeImages/${el.id}-${size}.${type}`
+                return el;
+            })
         });
     return response;
 }
@@ -39,11 +43,11 @@ export async function getRecipesByIngredients(ingredients, number) {
     axios
         .get(
             "https://api.spoonacular.com/recipes/findByIngredients?apiKey=" +
-                API_KEY +
-                "&ingredients=" +
-                ingredients +
-                "&number=" +
-                number
+            API_KEY +
+            "&ingredients=" +
+            ingredients +
+            "&number=" +
+            number
         )
         .then(response => {
             this.response = response.data.results;
@@ -57,16 +61,20 @@ export async function getRecipesByIngredients(ingredients, number) {
  * @returns {Array} randomly picked recipes
  */
 
-export async function getRandomRecipes(number) {
+export async function getRandomRecipes(number, size) {
     axios
         .get(
             "https://api.spoonacular.com/recipes/random?apiKey=" +
-                API_KEY +
-                "&number=" +
-                number
+            API_KEY +
+            "&number=" +
+            number
         )
         .then(response => {
-            this.response = response.data.results;
+            this.response = response.results.map(el => {
+                const type = el.image.split('.')[1];
+                el.image = `https://spoonacular.com/recipeImages/${el.id}-${size}.${type}`
+                return el;
+            })
         });
     return response;
 }
