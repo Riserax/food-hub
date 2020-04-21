@@ -1,0 +1,79 @@
+[debug] [2020-04-20T15:02:23.655Z] ----------------------------------------------------------------------
+[debug] [2020-04-20T15:02:23.657Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\12\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2020-04-20T15:02:23.658Z] CLI Version:   8.1.1
+[debug] [2020-04-20T15:02:23.658Z] Platform:      win32
+[debug] [2020-04-20T15:02:23.658Z] Node Version:  v12.16.1
+[debug] [2020-04-20T15:02:23.659Z] Time:          Mon Apr 20 2020 17:02:23 GMT+0200 (GMT+02:00)
+[debug] [2020-04-20T15:02:23.659Z] ----------------------------------------------------------------------
+[debug] [2020-04-20T15:02:23.659Z] 
+[debug] [2020-04-20T15:02:23.668Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-04-20T15:02:23.668Z] > authorizing via signed-in user
+[debug] [2020-04-20T15:02:23.668Z] [iam] checking project food-hub-42121 for permissions ["firebase.projects.get"]
+[debug] [2020-04-20T15:02:23.671Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/food-hub-42121:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2020-04-20T15:02:23.947Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 20 Apr 2020 15:02:23 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=184","alt-svc":"quic=\":443\"; ma=2592000; v=\"46,43\",h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-04-20T15:02:23.949Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/food-hub-42121  
+ 
+[debug] [2020-04-20T15:02:24.188Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 20 Apr 2020 15:02:24 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"quic=\":443\"; ma=2592000; v=\"46,43\",h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Serving from 'C:\Users\12\Desktop\folder1\food-hub'...
+[info] 
+[debug] [2020-04-20T15:02:24.191Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/food-hub-42121/webApps/-/config  
+ 
+[debug] [2020-04-20T15:02:24.915Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 20 Apr 2020 15:02:24 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"quic=\":443\"; ma=2592000; v=\"46,43\",h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000
+[debug] [2020-04-20T15:02:44.274Z] ----------------------------------------------------------------------
+[debug] [2020-04-20T15:02:44.276Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\12\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2020-04-20T15:02:44.276Z] CLI Version:   8.1.1
+[debug] [2020-04-20T15:02:44.276Z] Platform:      win32
+[debug] [2020-04-20T15:02:44.276Z] Node Version:  v12.16.1
+[debug] [2020-04-20T15:02:44.277Z] Time:          Mon Apr 20 2020 17:02:44 GMT+0200 (GMT+02:00)
+[debug] [2020-04-20T15:02:44.278Z] ----------------------------------------------------------------------
+[debug] [2020-04-20T15:02:44.278Z] 
+[debug] [2020-04-20T15:02:44.285Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-04-20T15:02:44.285Z] > authorizing via signed-in user
+[debug] [2020-04-20T15:02:44.286Z] [iam] checking project food-hub-42121 for permissions ["firebase.projects.get"]
+[debug] [2020-04-20T15:02:44.289Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/food-hub-42121:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2020-04-20T15:02:45.180Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 20 Apr 2020 15:02:45 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=827","alt-svc":"quic=\":443\"; ma=2592000; v=\"46,43\",h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-04-20T15:02:45.181Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/food-hub-42121  
+ 
+[debug] [2020-04-20T15:02:45.369Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 20 Apr 2020 15:02:45 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"quic=\":443\"; ma=2592000; v=\"46,43\",h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Serving from 'C:\Users\12\Desktop\folder1\food-hub'...
+[info] 
+[debug] [2020-04-20T15:02:45.372Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/food-hub-42121/webApps/-/config  
+ 
+[debug] [2020-04-20T15:02:45.992Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 20 Apr 2020 15:02:45 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"quic=\":443\"; ma=2592000; v=\"46,43\",h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000
+[debug] [2020-04-20T20:25:49.971Z] ----------------------------------------------------------------------
+[debug] [2020-04-20T20:25:49.973Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\12\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2020-04-20T20:25:49.973Z] CLI Version:   8.1.1
+[debug] [2020-04-20T20:25:49.973Z] Platform:      win32
+[debug] [2020-04-20T20:25:49.974Z] Node Version:  v12.16.1
+[debug] [2020-04-20T20:25:49.975Z] Time:          Mon Apr 20 2020 22:25:49 GMT+0200 (GMT+02:00)
+[debug] [2020-04-20T20:25:49.975Z] ----------------------------------------------------------------------
+[debug] [2020-04-20T20:25:49.975Z] 
+[debug] [2020-04-20T20:25:49.986Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-04-20T20:25:49.986Z] > authorizing via signed-in user
+[debug] [2020-04-20T20:25:49.986Z] [iam] checking project food-hub-42121 for permissions ["firebase.projects.get"]
+[debug] [2020-04-20T20:25:49.988Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-04-20T20:25:49.989Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-04-20T20:25:50.099Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 20 Apr 2020 20:25:50 GMT","server":"scaffolding on HTTPServer2","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"quic=\":443\"; ma=2592000; v=\"46,43\",h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-04-20T20:25:50.104Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/food-hub-42121:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2020-04-20T20:25:51.030Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 20 Apr 2020 20:25:51 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=853","alt-svc":"quic=\":443\"; ma=2592000; v=\"46,43\",h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-04-20T20:25:51.030Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/food-hub-42121  
+ 
+[debug] [2020-04-20T20:25:51.284Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 20 Apr 2020 20:25:51 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"quic=\":443\"; ma=2592000; v=\"46,43\",h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Serving from 'C:\Users\12\Desktop\folder1\food-hub'...
+[info] 
+[debug] [2020-04-20T20:25:51.287Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/food-hub-42121/webApps/-/config  
+ 
+[debug] [2020-04-20T20:25:52.058Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 20 Apr 2020 20:25:52 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"quic=\":443\"; ma=2592000; v=\"46,43\",h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000

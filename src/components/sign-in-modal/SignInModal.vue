@@ -82,6 +82,8 @@
 </template>
 <script>
 import { MODAL_MODE } from "./ModalMode.js";
+import * as firebase from "firebase/app";
+require("firebase/auth");
 
 export default {
 	computed: {
@@ -135,6 +137,7 @@ export default {
 		return {
 			email: "",
 			password: "",
+			user: "",
 			modalMode: MODAL_MODE.SIGN_IN,
 		};
 	},
@@ -153,7 +156,18 @@ export default {
 			this.$emit("toggleSignInModal");
 		},
 		onContinueWithFacebookClicked() {
-			console.log("CONTIUNEWITHFB");
+			var provider = new firebase.auth.FacebookAuthProvider();
+			firebase
+				.auth()
+				.signInWithPopup(provider)
+				.then(function(result) {
+					var user = result.user;
+					console.log(user);
+				})
+				.catch(function(error) {
+					console.log("handle error!" + error);
+				});
+			this.$router.push("Home");
 		},
 		async onActionButtonClicked() {
 			switch (this.modalMode) {
@@ -172,13 +186,29 @@ export default {
 			}
 		},
 		async signInAction() {
-			console.log("SIGNIN");
+			firebase
+				.auth()
+				.signInWithEmailAndPassword(this.email, this.password)
+				.catch(function(error) {
+					console.log("handle error!" + error); //catch them all
+				});
 		},
 		async signUpAction() {
-			console.log("SIGN_UP");
+			firebase
+				.auth()
+				.createUserWithEmailAndPassword(this.email, this.password)
+				.catch(function(error) {
+					console.log("handle error!" + error); //catch them all
+				});
 		},
 		async forgotPasswordAction() {
-			console.log("FORGOTPASSWORD");
+			firebase
+				.auth()
+				.sendPasswordResetEmail(this.email)
+
+				.catch(function(error) {
+					console.log("handle error!" + error); //catch them all
+				});
 		},
 		onForgotPasswordClicked() {
 			this.modalMode = MODAL_MODE.FORGOT_PASSWORD;
