@@ -208,8 +208,8 @@ export default {
 				.createUserWithEmailAndPassword(this.email, this.password)
 				.then(result => {
 					this.error_message = "You can log in now!";
-					this.clearData();
 					console.log(result);
+					this.clearData();
 				})
 				.catch(error => {
 					this.error_message = error;

@@ -34,7 +34,6 @@ export async function getResultByName(query, number, size) {
 
 /**
  *
-
  * @param {string} ingredients - A comma-separated list of ingredients that the recipes should contain.
  * @returns {Array}
  */
