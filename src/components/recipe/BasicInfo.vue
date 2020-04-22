@@ -190,7 +190,11 @@ export default {
 	},
 	computed: {
 		calories() {
-			return this.recipe.nutrition.nutrients[0].amount.toFixed(0);
+			let value = "";
+			if (Object.keys(this.recipe).length > 0) {
+				value = this.recipe.nutrition.nutrients[0].amount.toFixed(0);
+			}
+			return value;
 		},
 		facebookLink() {
 			return (
